@@ -1,9 +1,13 @@
 <h4>Project Title: Wordinator</h4>
 <h5>Author: Sam Camus (xdothackerx) </h5>
 
-Approach: Stumbled through documentation and tried various things. Tried to write a test but somehow couldn't comprehend how to make one.
-Ended up with a bunch of inexplicable bugs including Sinatra somehow reading my commented out code (WTF!?) and not allowing me to assign variables
-or use <> tags for HTML. Eventually... it started working, for no reason.
+This app takes two words inputted through the url and checks to see if they are anagrams of each other. It returns a JSON object with the inputs and the result.
+Example: 
+Input- http://localhost:4567/hello/sam
+Output- {"input1":"hello","input2":"sam","anagram?":false}
+
+Input- http://localhost:4567/doctorwho/torchwood
+Output- {"input1":"doctorwho","input2":"torchwood","anagram?":true}
 
 Sources: http://www.sinatrarb.com/intro.html, Stack Overflow (not helpful this time) 
 
